@@ -4,6 +4,14 @@ Convenient way to add [PDFium](https://github.com/bblanchon/pdfium-binaries/rele
 
 The goal is to keep it reasonably up to date.
 
+## To use it
+
+This package is available on [NuGet](https://www.nuget.org/packages/PdfiumPrinter.Native/).
+
+```
+    Install-Package PdfiumPrinter.Native -Version 1.0.0
+```
+
 ## Try it locally
 
 If you'd like to contribute to this project, and so, need to test it locally, you can do the following:
