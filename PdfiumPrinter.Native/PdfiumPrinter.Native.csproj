@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Authors>Leandro Silva</Authors>
+    <Company>leandrosilva.com.br</Company>
+    <Description>Convenient way to add PDFium binaries to your own projects, courtesy of Benoît Blanchon.</Description>
+    <Copyright>Leandro Silva, 2021</Copyright>
+    <PackageTags>pdfium;pdf;dll;binaries;native</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)\runtimes\win-x64\native\pdfium.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Pack>true</Pack>
+      <PackagePath>runtimes\win-x64\native\</PackagePath>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)\runtimes\win-x86\native\pdfium.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Pack>true</Pack>
+      <PackagePath>runtimes\win-x86\native\</PackagePath>
+    </Content>
+  </ItemGroup>
+</Project>
